@@ -1,0 +1,18 @@
+{
+    "_type": "https://in-toto.io/Statement/v1",
+    "predicateType": "https://project-ilm.org/attestations/candor/v1",
+    "subject": [
+        {
+            "name": "project-ilm/masi-desk",
+            "digest": {
+                "gitCommit": "9085cde8b3ab440e0c9eda4ae032eaa7579a9418"
+            }
+        }
+    ],
+    "predicate": {
+        "action": "PUSH",
+        "reason": "seed",
+        "utc": "20261010T221143Z",
+        "host": "ilm01-lin"
+    }
+}
