@@ -1,5 +1,7 @@
 # MASI desk
 
+DOI: [10.5281/zenodo.23288683](https://doi.org/10.5281/zenodo.23288683)
+
 © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
 
 SPDX-License-Identifier: GPL-3.0-or-later
