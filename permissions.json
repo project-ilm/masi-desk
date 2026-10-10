@@ -1,0 +1,14 @@
+{
+  "author": ["submit", "revise", "withdraw", "retract-own", "review"],
+  "co-author": ["submit", "revise", "withdraw"],
+  "corresponding-author": ["submit", "revise", "withdraw", "retract-own"],
+  "reviewer": ["review", "decline"],
+  "handling-editor": ["assign", "decide", "accept", "reject", "publish", "policy"],
+  "area-chair": ["assign", "decide", "accept", "reject"],
+  "editor": ["assign", "decide", "accept", "reject", "publish", "retract-venue", "policy"],
+  "chair": ["assign", "decide", "accept", "reject", "publish", "retract-venue", "policy", "grant-track"],
+  "board": ["read-public", "policy"],
+  "irb-member": ["review"],
+  "irb-chair": ["approve", "refuse", "amend", "renew", "decide"],
+  "reader": ["read-public"]
+}

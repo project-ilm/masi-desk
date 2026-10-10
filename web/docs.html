@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. --><meta charset="utf-8"><title>MASI docs</title><link rel="stylesheet" href="site.css"></head>
+<body>
+<header><a href="index.html">MASI</a> <a href="docs.html">Docs</a> <a href="desk.html">Desk</a> <a href="tokens.html">Tokens</a> <a href="actions.html">Actions</a></header>
+<main>
+<h1>Documentation</h1>
+<p>The static pages are GitHub Pages. The Python desk runs locally. JavaScript in <code>masi.js</code> folds events, checks G3, and hashes a salted identifier in the browser. It does not mint.</p>
+<h2>Start the server</h2>
+<pre>python3 -m masi.server</pre>
+<p>The desk page then calls <code>/api/health</code>, <code>/api/launch</code>, and <code>/api/venues</code>.</p>
+<h2>What is not a mint</h2>
+<p><code>misty publish --dry-run</code> returns <code>doi: null</code>. A missing OpenTimestamps proof is <code>pending_external</code>. A GitHub issue is not opened by these pages.</p>
+</main>
+</body>
+</html>

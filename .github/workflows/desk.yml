@@ -1,0 +1,27 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+name: desk
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: journal, conference, or book
+        required: true
+        default: journal
+      title:
+        description: venue title
+        required: true
+        default: Example
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python3 -m pip install -r requirements.txt
+      - run: python3 -m unittest tests/test_desk.py tests/test_platform.py
+      - env:
+          KIND: ${{ github.event.inputs.kind }}
+          TITLE: ${{ github.event.inputs.title }}
+        run: python3 -c 'import os; print("dispatch", os.environ["KIND"], os.environ["TITLE"])'

@@ -1,0 +1,65 @@
+{
+  "journal": [
+    ["prepared", "submitted", "author"],
+    ["submitted", "desk-check", "editor"],
+    ["desk-check", "under-review", "editor"],
+    ["desk-check", "rejected", "editor"],
+    ["under-review", "reviews-received", "editor"],
+    ["reviews-received", "major-revision", "editor"],
+    ["reviews-received", "minor-revision", "editor"],
+    ["reviews-received", "accepted", "editor"],
+    ["reviews-received", "rejected", "editor"],
+    ["major-revision", "resubmitted", "author"],
+    ["minor-revision", "resubmitted", "author"],
+    ["resubmitted", "under-review", "editor"],
+    ["accepted", "copyedit", "editor"],
+    ["copyedit", "proof", "editor"],
+    ["proof", "published", "editor"],
+    ["*", "withdrawn", "author"],
+    ["*", "withdrawn", "editor"]
+  ],
+  "conference": [
+    ["prepared", "abstract-submitted", "author"],
+    ["abstract-submitted", "abstract-accepted", "chair"],
+    ["abstract-submitted", "rejected", "chair"],
+    ["abstract-accepted", "full-submitted", "author"],
+    ["full-submitted", "under-review", "chair"],
+    ["under-review", "reviews-received", "chair"],
+    ["reviews-received", "rebuttal", "author"],
+    ["rebuttal", "reviews-received", "chair"],
+    ["reviews-received", "accepted", "chair"],
+    ["reviews-received", "rejected", "chair"],
+    ["accepted", "camera-ready", "author"],
+    ["camera-ready", "presented", "chair"],
+    ["presented", "proceedings-published", "chair"],
+    ["*", "withdrawn", "author"],
+    ["*", "withdrawn", "chair"]
+  ],
+  "chapter": [
+    ["proposed", "invited", "editor"],
+    ["invited", "drafting", "author"],
+    ["drafting", "submitted", "author"],
+    ["submitted", "editor-review", "editor"],
+    ["editor-review", "revising", "editor"],
+    ["revising", "final", "editor"],
+    ["final", "in-production", "editor"],
+    ["in-production", "published", "editor"],
+    ["*", "dropped", "editor"]
+  ],
+  "appeal": [
+    ["requested", "under-review", "editor"],
+    ["under-review", "upheld", "chair"],
+    ["under-review", "denied", "chair"]
+  ],
+  "irb": [
+    ["drafted", "submitted", "author"],
+    ["submitted", "under-review", "irb-chair"],
+    ["under-review", "approved", "irb-chair"],
+    ["under-review", "refused", "irb-chair"],
+    ["under-review", "exempt", "irb-chair"],
+    ["approved", "amendment", "irb-chair"],
+    ["approved", "renewed", "irb-chair"],
+    ["renewed", "expired", "irb-chair"],
+    ["approved", "closed", "irb-chair"]
+  ]
+}

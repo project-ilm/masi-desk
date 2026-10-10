@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. --><meta charset="utf-8"><title>Actions</title><link rel="stylesheet" href="site.css"></head>
+<body>
+<header><a href="index.html">MASI</a> <a href="docs.html">Docs</a> <a href="desk.html">Desk</a> <a href="tokens.html">Tokens</a> <a href="actions.html">Actions</a></header>
+<main>
+<h1>Actions</h1>
+<p>The workflow accepts <code>workflow_dispatch</code>. After the repository is seeded, the URL is:</p>
+<pre>https://github.com/zistgah/masi/actions/workflows/desk.yml</pre>
+<p>Locally, the same dispatch uses the GitHub CLI:</p>
+<pre>gh workflow run desk.yml --ref main -f kind=journal -f title=Example</pre>
+<p>This page does not call <code>gh</code>. The script <code>bin/dispatch.sh</code> does.</p>
+</main>
+</body>
+</html>

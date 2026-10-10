@@ -1,0 +1,18 @@
+{
+  "policy_version": "2026-10-06",
+  "priority": "on-accept",
+  "reviews": "closed",
+  "review_as_version": false,
+  "blind": false,
+  "blind_arrival": {
+    "salted_issue": false,
+    "ciphertext": false,
+    "private_review_repository": false,
+    "keyless_tok_registry": false
+  },
+  "conference": {
+    "registration": false,
+    "invitation_letters": false,
+    "visa_letters": false
+  }
+}

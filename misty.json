@@ -1,0 +1,14 @@
+{
+ "title": "MASI desk: a venue, docket and provenance desk (local rehearsal)",
+ "version": "0.1.0",
+ "upload_type": "software",
+ "description": "The MASI desk lets a person, a group or an institution launch and run a journal, a conference or a book, and keep the docket, IRB and intellectual-property matters of their own submissions, as append-only events folded into current state, with regenerable indexes. This release is a local rehearsal of a partial implementation of the canon in desk-requirements.md. It does not mint, push or stamp on its own behalf. docs/CHECK.md records what was checked, the defects corrected before release, and what of the canon is not yet implemented, including blind arrival, which is refused in this release.",
+ "license": "GPL-3.0-or-later",
+ "access_right": "open",
+ "language": "eng",
+ "creators": [{"name": "Choudhary, Abhishek", "affiliation": "AyeAI", "orcid": "0009-0002-0684-8320"}],
+ "keywords": ["MASI", "misty-doi", "peer review", "journal workflow", "conference management", "docket", "IRB", "intellectual property", "provenance", "append-only events"],
+ "programming_language": ["Python", "JavaScript", "Shell"],
+ "repository": "https://github.com/project-ilm/masi-desk",
+ "related_identifiers": []
+}

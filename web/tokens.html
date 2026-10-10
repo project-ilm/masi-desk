@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. --><meta charset="utf-8"><title>Tokens</title><link rel="stylesheet" href="site.css"></head>
+<body>
+<header><a href="index.html">MASI</a> <a href="docs.html">Docs</a> <a href="desk.html">Desk</a> <a href="tokens.html">Tokens</a> <a href="actions.html">Actions</a></header>
+<main>
+<h1>Tokens</h1>
+<p>A Zenodo token is sent only to the local server. This page does not write it into the repository, an event, or an index.</p>
+<form id="token">
+<label>Paste <input name="zenodo" type="password" autocomplete="off"></label>
+<label>Or load a file <input name="file" type="file"></label>
+<button type="submit">Load into local server</button>
+</form>
+<pre id="out"></pre>
+</main>
+<script>
+const out = document.getElementById("out");
+document.getElementById("token").onsubmit = async (event) => {
+  event.preventDefault();
+  let value = event.target.zenodo.value;
+  const file = event.target.file.files[0];
+  if (file) value = (await file.text()).trim();
+  const response = await fetch("http://127.0.0.1:8765/api/token", {
+    method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({zenodo: value})
+  });
+  out.textContent = JSON.stringify(await response.json(), null, 2);
+  event.target.zenodo.value = "";
+};
+</script>
+</body>
+</html>

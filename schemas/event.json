@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "event.json",
+  "type": "object",
+  "required": ["event_id", "event_type", "actor", "timestamp", "matter_id", "parent_event", "policy_version"],
+  "properties": {
+    "event_id": {"type": "string"},
+    "event_type": {"type": "string"},
+    "actor": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "matter_id": {"type": "string"},
+    "previous_state": {},
+    "new_state": {},
+    "dimension": {"type": "string"},
+    "parent_event": {"type": ["string", "null"]},
+    "policy_version": {"type": "string"}
+  }
+}
